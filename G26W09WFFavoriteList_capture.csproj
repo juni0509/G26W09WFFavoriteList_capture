@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>G26W09WFFavoriteList</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="CaptureProgram.cs" />
+    <Compile Include="..\G26W09WFFavoriteList\Favorite.cs" />
+    <Compile Include="..\G26W09WFFavoriteList\FavoriteDatabase.cs" />
+    <Compile Include="..\G26W09WFFavoriteList\Form1.cs" />
+    <Compile Include="..\G26W09WFFavoriteList\Form1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.*" />
+  </ItemGroup>
+
+</Project>
